@@ -1,0 +1,21 @@
+{
+    "code": "corals-google-places",
+    "name": "Google Places Module",
+    "author": "Corals",
+    "type": "module",
+    "description": "Google Places Importer to Directory Module",
+    "namespace": "Corals\\Modules\\Places\\",
+    "provider": "PlacesServiceProvider",
+    "version": "3.0",
+    "load_order": "0",
+    "folder": "Places",
+    "autoload": "psr-4",
+    "icon": "fa fa-google",
+    "require": {
+        "corals-foundation": "^6.0",
+        "corals-directory": "^3.0"
+    },
+    "supported_platforms": [
+        "Directory"
+    ]
+}
