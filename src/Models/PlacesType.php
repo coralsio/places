@@ -3,7 +3,6 @@
 namespace Corals\Modules\Places\Models;
 
 use Corals\Foundation\Models\BaseModel;
-use Corals\Modules\Ecommerce\Models\Listing;
 use Spatie\Activitylog\Traits\LogsActivity;
 
 class PlacesType extends BaseModel
@@ -27,10 +26,8 @@ class PlacesType extends BaseModel
         return $this->hasMany(Import::class, 'places_type_import');
     }
 
-
     public function scopeActive($query)
     {
         return $query->where('status', 'active');
     }
-
 }

@@ -3,12 +3,11 @@
 namespace Corals\Modules\Places\Policies;
 
 use Corals\Foundation\Policies\BasePolicy;
-use Corals\User\Models\User;
 use Corals\Modules\Places\Models\Import;
+use Corals\User\Models\User;
 
 class ImportPolicy extends BasePolicy
 {
-
     /**
      * @param User $user
      * @return bool
@@ -18,6 +17,7 @@ class ImportPolicy extends BasePolicy
         if ($user->can('Places::import.view')) {
             return true;
         }
+
         return false;
     }
 
@@ -40,6 +40,7 @@ class ImportPolicy extends BasePolicy
         if ($user->can('Places::import.update')) {
             return true;
         }
+
         return false;
     }
 
@@ -53,7 +54,7 @@ class ImportPolicy extends BasePolicy
         if ($user->can('Places::import.delete')) {
             return true;
         }
+
         return false;
     }
-
 }

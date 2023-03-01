@@ -21,13 +21,12 @@ class ImportTransformer extends BaseTransformer
      */
     public function transform(Import $import)
     {
-
         $levels = [
             'pending' => 'info',
             'in_progress' => 'success',
             'completed' => 'primary',
             'failed' => 'danger',
-            'canceled' => 'warning'
+            'canceled' => 'warning',
         ];
 
         $show_url = url($this->resource_url . '/' . $import->hashed_id);
@@ -41,7 +40,7 @@ class ImportTransformer extends BaseTransformer
             'imported_listings_count' => $import->listings->count(),
             'created_at' => format_date($import->created_at),
             'updated_at' => format_date($import->updated_at),
-            'action' => $this->actions($import)
+            'action' => $this->actions($import),
         ];
 
         return parent::transformResponse($transformedArray);

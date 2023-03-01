@@ -6,6 +6,4 @@ Route::group(['prefix' => 'places'], function () {
 
     Route::get('settings', 'PlacesController@settings');
     Route::post('settings', 'PlacesController@saveSettings');
-
 });
-

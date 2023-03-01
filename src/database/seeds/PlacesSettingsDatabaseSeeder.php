@@ -14,8 +14,6 @@ class PlacesSettingsDatabaseSeeder extends Seeder
      */
     public function run()
     {
-
-
         \DB::table('settings')->insert([
             [
                 'code' => 'places_google_api_key',
@@ -27,7 +25,7 @@ class PlacesSettingsDatabaseSeeder extends Seeder
                 'hidden' => 0,
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
-            ]
+            ],
         ]);
     }
 }

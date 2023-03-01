@@ -15,7 +15,6 @@ class PlacesTables extends Migration
      */
     public function up()
     {
-
         Schema::create('places_types', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
@@ -39,8 +38,10 @@ class PlacesTables extends Migration
 
             $table->integer('max_result_pages');
             $table->integer('radius');
-            $table->enum('status',
-                ['canceled', 'pending', 'in_progress', 'completed', 'failed'])->default('pending')->nullable();
+            $table->enum(
+                'status',
+                ['canceled', 'pending', 'in_progress', 'completed', 'failed']
+            )->default('pending')->nullable();
             $table->text('notes')->nullable();
 
             $table->text('properties')->nullable();
@@ -54,7 +55,6 @@ class PlacesTables extends Migration
             $table->foreign('type_id')->references('id')->on('places_types')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('category_id')->references('id')->on('utility_categories')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('location_id')->references('id')->on('utility_locations')->onDelete('cascade')->onUpdate('cascade');
-
         });
 
 
@@ -66,8 +66,6 @@ class PlacesTables extends Migration
             $table->foreign('import_id')->references('id')->on('places_imports')->onDelete('cascade')->onUpdate('cascade');
             $table->unique(['listing_id', 'import_id']);
         });
-
-
     }
 
     /**
@@ -80,6 +78,5 @@ class PlacesTables extends Migration
         Schema::dropIfExists('places_import_listing');
         Schema::dropIfExists('places_imports');
         Schema::dropIfExists('places_types');
-
     }
 }

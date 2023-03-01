@@ -7,16 +7,6 @@ use Corals\Modules\Places\DataTables\ImportsDataTable;
 use Corals\Modules\Places\Http\Requests\ImportRequest;
 use Corals\Modules\Places\Models\Import;
 
-use ApaiIO\Configuration\GenericConfiguration;
-use ApaiIO\Operations\Search;
-use ApaiIO\ApaiIO;
-use Corals\Modules\Ecommerce\Models\Brand;
-use Corals\Modules\Ecommerce\Models\Type;
-use Corals\Modules\Ecommerce\Models\Listing;
-use Corals\Modules\Ecommerce\Models\SKU;
-use Spatie\MediaLibrary\Filesystem\Filesystem;
-use Spatie\TemporaryDirectory\TemporaryDirectory;
-
 class ImportsController extends BaseController
 {
     protected $excludedRequestParams = [];
@@ -139,5 +129,4 @@ class ImportsController extends BaseController
 
         return response()->json($message);
     }
-
 }

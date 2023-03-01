@@ -22,7 +22,7 @@ return [
         'image_count' => 'Max Images Per Listing',
         'notes' => 'Notes',
         'max_result_pages' => 'Max Result Pages to Import',
-        'listing_type' => 'Listing Type'
+        'listing_type' => 'Listing Type',
 
-    ]
+    ],
 ];

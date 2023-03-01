@@ -9,7 +9,7 @@ class Places
     /**
      * Places constructor.
      */
-    function __construct()
+    public function __construct()
     {
     }
 
@@ -19,6 +19,5 @@ class Places
     public function getPlacesTypes()
     {
         return PlacesType::active()->pluck('name', 'id')->toArray();
-
     }
 }

@@ -16,10 +16,10 @@ return [
                 'validation' => '',
                 'value' => null,
                 'attributes' => [
-                    'help_text' => ''
-                ]
-            ]
-        ]
-    ]
+                    'help_text' => '',
+                ],
+            ],
+        ],
+    ],
 
 ];

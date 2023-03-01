@@ -13,7 +13,6 @@ class PlacesObserverServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-
         Import::observe(ImportObserver::class);
     }
 }

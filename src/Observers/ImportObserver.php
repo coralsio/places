@@ -6,7 +6,6 @@ use Corals\Modules\Places\Models\Import;
 
 class ImportObserver
 {
-
     /**
      * @param Import $import
      */

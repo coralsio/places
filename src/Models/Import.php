@@ -10,7 +10,8 @@ use Spatie\Activitylog\Traits\LogsActivity;
 
 class Import extends BaseModel
 {
-    use PresentableTrait, LogsActivity;
+    use PresentableTrait;
+    use LogsActivity;
 
     /**
      *  Model configuration.
@@ -39,10 +40,8 @@ class Import extends BaseModel
         return $this->belongsTo(Location::class);
     }
 
-
     public function scopePending($query)
     {
         return $query->where('status', 'pending');
     }
-
 }

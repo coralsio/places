@@ -9,7 +9,7 @@ use Corals\Modules\Places\database\seeds\PlacesDatabaseSeeder;
 class UninstallModuleServiceProvider extends BaseUninstallModuleServiceProvider
 {
     protected $migrations = [
-        PlacesTables::class
+        PlacesTables::class,
     ];
 
     protected function providerBooted()

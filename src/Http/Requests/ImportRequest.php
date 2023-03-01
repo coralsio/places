@@ -42,7 +42,7 @@ class ImportRequest extends BaseRequest
 
         if ($this->isStore()) {
             $rules = array_merge($rules, [
-                'title' => 'required|max:191|unique:places_imports,title'
+                'title' => 'required|max:191|unique:places_imports,title',
             ]);
         }
 

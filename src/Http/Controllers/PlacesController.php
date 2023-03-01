@@ -21,8 +21,8 @@ class PlacesController extends BaseController
         $settings = [];
         foreach ($config_setting as $key => $setting) {
             $settings['places_' . $key] = ['name' => trans('Places::labels.settings.' . $key), 'settings' => $setting];
-
         }
+
         return view('Places::places.settings')->with(compact('settings'));
     }
 

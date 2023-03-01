@@ -22,11 +22,12 @@ class PlacesMenuDatabaseSeeder extends Seeder
             'description' => 'Places Menu Item',
             'icon' => 'fa fa-google',
             'target' => null, 'roles' => '["1","2"]',
-            'order' => 0
+            'order' => 0,
         ]);
 
         // seed subscriptions children menu
-        \DB::table('menus')->insert([
+        \DB::table('menus')->insert(
+            [
                 [
                     'parent_id' => $places_menu_id,
                     'key' => null,
@@ -36,12 +37,13 @@ class PlacesMenuDatabaseSeeder extends Seeder
                     'description' => 'Imports List Menu Item',
                     'icon' => 'fa fa-upload',
                     'target' => null, 'roles' => '["1"]',
-                    'order' => 0
+                    'order' => 0,
                 ],
             ]
         );
         // seed users children menu
-        \DB::table('menus')->insert([
+        \DB::table('menus')->insert(
+            [
                 [
                     'parent_id' => $places_menu_id,
                     'key' => null,
@@ -52,7 +54,7 @@ class PlacesMenuDatabaseSeeder extends Seeder
                     'icon' => 'fa fa-cog fa-fw',
                     'target' => null,
                     'roles' => '["1"]',
-                    'order' => 0
+                    'order' => 0,
                 ],
             ]
         );
