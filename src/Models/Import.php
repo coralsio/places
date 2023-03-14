@@ -5,7 +5,7 @@ namespace Corals\Modules\Places\Models;
 use Corals\Foundation\Models\BaseModel;
 use Corals\Foundation\Transformers\PresentableTrait;
 use Corals\Modules\Directory\Models\Listing;
-use Corals\Modules\Utility\Location\Models\Location;
+use Corals\Utility\Location\Models\Location;
 use Spatie\Activitylog\Traits\LogsActivity;
 
 class Import extends BaseModel
