@@ -38,7 +38,7 @@ class PlacesRouteServiceProvider extends ServiceProvider
      */
     public function map()
     {
-//        $this->mapApiRoutes();
+        //        $this->mapApiRoutes();
 
         $this->mapWebRoutes();
 
