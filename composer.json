@@ -28,7 +28,7 @@
     },
     "require": {
         "skagarwal/google-places-api": "^2.0.1",
-        "corals/directory": "@dev"
+        "corals/directory": "^10.0.0"
     },
     "scripts": {
         "test": "vendor/bin/phpunit",
