@@ -13,7 +13,7 @@
     "icon": "fa fa-google",
     "require": {
         "corals-foundation": "^6.0",
-        "corals-directory": "^3.0"
+        "corals-directory": "^10.0.0"
     },
     "supported_platforms": [
         "Directory"
