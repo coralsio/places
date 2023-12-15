@@ -1,6 +1,6 @@
 # Corals Places
 
-This is where your description should go. Try and limit it to a paragraph or two. Consider adding a small example.
+Import Locations using Google Places API into Laraship Directory
 
 ## Installation
 
